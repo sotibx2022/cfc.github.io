@@ -1,0 +1,597 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+small{
+    color:green;
+    font-size: 1.5rem;
+    display: block;
+    width: 30vw;
+    text-transform: capitalize;
+}
+.section-heading{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+    margin: 2rem 0;
+}
+.section-heading h2{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+.section-heading span{
+    color:orangered;
+}
+.section-heading img{
+    width: 4vw;
+}
+::selection{
+    background: orangered;
+    color:white;
+}
+/*=============HEADER SECTION======================*/
+
+/*Nav area*/
+header{
+    background:url(Images/background.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#nav{
+
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    border-top: 10px solid green;
+}
+.nav-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+/*Menu Area*/
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding-top:0.5rem;
+    gap:1rem;
+}
+.menu ul li{
+    list-style: none;
+    
+}
+.menu ul li a{
+    padding: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.5s ease;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.menu ul li a:hover{
+    color:black;
+    background-color:white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    
+}
+/*Logo-area*/
+.logo-img img{
+    height: 7rem;
+    width: auto;
+    padding: 1rem 1rem;
+}
+/*Responsive Menu*/
+#nav{
+    position: relative;
+}
+.responsive-menu i{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 90%;
+    cursor: pointer;
+}
+.responsive-menu .fa-bars{
+    display: none;
+}
+.responsive-menu .fa-times{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+     
+    .menu ul{
+        display: none;
+    }
+    .responsive-menu .fa-bars{
+    display: block;
+}
+    .active .responsive-menu .fa-bars {
+        display: none;
+    }
+    .active .responsive-menu .fa-times{
+        display: block;
+        top:20%;
+    }
+    .active .menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .active .nav-area {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+}
+    
+/*Banner Area*/
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-direction: column;
+    height: 100vh;
+}
+.banner h1{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: black;
+    text-align: center;
+    width: 70%;
+    font-size: 4rem;
+}
+.banner span{
+    color:orangered;
+}
+.banner p{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color:black;
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+}
+.banner .btn{
+    margin-top:5rem;
+}
+.btn a{
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;  
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: orangered;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+   
+}
+.btn a:hover{
+    color:black;
+    background-color: white;
+    transition: all 1s ease;
+}
+/*======================== HERO SECTION =======================*/
+
+#hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.hero-image{
+    width:50vw;
+    height: auto;
+}
+.hero-image img{
+    width: 100%;
+    display: block;
+}
+.hero-paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: orangered;
+}
+.hero-paragraph h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width:70%;
+    margin-bottom: 1rem;
+    color:white;
+}
+.hero-paragraph p{
+    width: 70%;
+    font-size: 1.4rem;
+    color:white;
+}
+/*====================== SERVICES SECTION ====================*/
+
+.sub-heading{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color:orangered;
+   
+}
+.paragraph{
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1 rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+    
+}
+.services-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.services-items img{
+    width: 20vw;
+    display: block;
+    margin: 1.5rem auto;
+    border: 0.2rem solid white;
+}
+.service-item{
+    border: 0.1rem solid orangered;
+    background-color: back;
+    box-shadow: 5px 5px 5px orangered;
+    width: 25vw;
+   
+}
+
+/*==================== FOODS SECTION ====================*/
+
+
+.delicious-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 5vh;
+    
+    
+    
+}
+.delicious-items img{
+    width:100%;
+    transition: 0.5s;
+    display: block;
+    
+}
+.delicious-items img:hover{
+    transform: scale(1.05);
+}
+.food-item{
+    background-color: orangered;
+    overflow: hidden;
+    border:5px solid orangered;
+    width: 25%;
+    
+}
+.food-item h6{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top:1rem;
+}
+.food-item h5{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    color:white;
+    margin-bottom: 1rem;
+}
+#foods .btn{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+/*======================CONTACT SECTION====================*/
+.contact-options{
+    display: flex;
+}
+.contact-item{
+    width: 29vw;
+}
+
+.contact-item h3{
+    font-size: 2rem;
+    text-align: center;
+    color:orangered;
+    margin:1rem 0;
+}
+/*----------------------opening-time-------------------------*/
+.opening-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: orangered;
+}
+.opening-details h3{
+    color:white;
+}
+.opening-details ul li{
+margin: 1rem 0;
+    list-style: none;
+    
+}
+.opening-time{
+    border-bottom: 2px dashed white;
+    width: 100%;
+}
+.opening-area{
+    border: 2px dashed white;
+    width: 90%;
+height: 90%;
+    margin: 1rem auto;
+}
+.opening-details h4{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding-top:1rem;
+}
+.opening-details h6{
+    text-align: center;
+    font-size: 1.3rem;
+    color:white;
+    font-style: italic;
+    margin-top:0.5rem;
+    
+}
+.available-online{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    font-size: 1.5rem;
+    color:white;
+}
+
+/*----------------contact form--------------*/
+.contact-form input, textarea, select,input[type=submit] {
+
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border: 0.1rem solid orangered;
+    border-radius: 0.5rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    outline: none;
+    width: 80%;
+    background: black;
+    color:orangered;
+    
+}
+.contact-form input[type = "number"]{
+    appearance:textfield;
+}
+.contact-form{
+    background: black;
+    margin: 0 auto;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: column;
+        gap:1.5rem;
+}
+
+.contact-form-item{
+    text-align: center;
+    width:90%;
+    margin-bottom: 1rem;
+}
+
+input[type=submit]:hover{
+    color:white;
+    background-color: orangered;
+    
+}
+/*-----------------DIRECT REACH----------------------*/
+
+.contact-details{
+    background: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-details h3{
+    color:white;
+}
+.contact-details ul{
+    padding: 1rem;
+}
+.contact-details ul li{
+    list-style: none;
+    padding: 0.5rem;
+    font-size: italic;
+    font-size: 1.2rem;
+
+    
+}
+.reach-area ul{
+    border-bottom: 2px dashed white;
+}
+.contact-details h4{
+    font-size: 1.5rem;
+text-transform: capitalize;
+
+}
+.contact-details address, email , phone{
+    color:white;
+}
+.suscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    gap:0.5rem;
+
+}
+.suscribe input[type=text]{
+    width: 60%;
+    padding:1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.suscribe input[type=submit]{
+    width:30%;
+    padding: 0.9rem 0.5rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color:white;
+    transition: 0.5s;
+}
+.suscribe input[type=submit]:hover{
+    background: black;
+
+}
+.reach-area{
+    width: 90%;
+    height: 90%;
+    border: 2px dashed white;
+    margin: 1rem auto;
+}
+/*========================FOOTER SECTION======================*/
+/*FOOTER 1 : PRIMARY FOOTER*/
+.primary-footerarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+#wave{
+margin-bottom: -1rem;
+
+}
+.primary-footer{
+    background: orangered;
+}
+.downlodeimg img{
+    width: 200px;
+    height: 80px;
+}
+.downlodeimg{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.get-whatsapp img{
+    width: 3rem;
+    height: auto;
+}
+.footeritem h2{
+    color:white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+/*FOOTER 2: SECONDARY FOOTER*/
+.secondary-footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 0;
+   
+}
+.for-regulars {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.label{
+    position: relative;
+}
+.label label{
+    position: absolute;
+    top:-0.75rem;
+    left: 15%;
+    background: orangered;
+}
+.for-regulars input{
+    height: 3rem;
+    width: 80%;
+    background: orangered;
+    border:1px solid black;
+}
+.for-regulars input:focus{
+    outline: none;
+}
+.for-regulars input[type=number]{
+    appearance:textfield;
+}
+.for-regulars input[type=submit]{
+    background: black;
+}
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    align-items: center;
+}
+.whatsappdetails{
+    display: flex;
+    gap:1rem;
+}
+.whatsappdetails input
+{
+    height: 3rem;
+    width: 80%;
+    background: orangered;
+    border:1px solid black;
+    padding-left: 1rem;
+}
+.whatsappnumber{
+    display: flex;
+    position: relative;
+    width: 80%;
+}
+.whatsappnumber input[type=number]{
+appearance:textfield;
+    
+}
+.whatsappnumber input[type=submit]{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    border:none;
+    width: 2rem;
+    height: 2rem;
+    color:white;
+    background: black;
+    top:0.5rem;
+    left:80%;
+    border-radius: 0px;
+}

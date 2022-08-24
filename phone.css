@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1400px) {
+
+    .hero-paragraph p{
+        width: 90%;
+    }  
+    .hero-paragraph h2{
+        width: 90%;
+    }
+
+
+    .additional-para{
+        display: none;
+    }
+    small{
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    
+    .contact-options {
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+    .contact-item{
+    width: 90vw;
+}
+    small{
+        width: 50vw;
+    } 
+    
+}
+@media only screen and (max-width: 900px) {
+    #hero {
+  display: flex;
+        flex-direction: column;
+}
+    .hero-image{
+        width: 100%;
+        height: auto;
+    }
+    .hero-paragraph {
+
+  width: 90vw;
+  margin: 0 auto;
+padding: 1rem auto;
+}
+    .additional-para{
+        display: block;
+    }
+     .hero-paragraph p {
+
+     padding-bottom: 1rem;
+}
+     .hero-paragraph h2 {
+
+  padding-top: 1rem;
+}
+    small{
+        width: 60vw;
+    }
+    .services-items{
+        flex-direction: column;
+        gap:1rem;
+    }
+    .service-item{
+        width: 90vw;
+    }
+    .services-items img {
+  width: 60%;
+
+}
+    .food-item{
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 450px) {
+  
+    #nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .menu ul li a{
+    font-size: 1rem;
+        padding: 0 0.1rem;
+    }
+    .banner h1{
+    
+    margin: 5rem auto;
+    font-size: 2rem;
+        width: 90%;
+    }
+    .banner p{
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+.btn a{
+    font-size: 1 rem;
+    line-height: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    }
+.services-items{
+flex-direction: column;
+    width: 100%;}
+.service-item{
+        width: 90vw;
+    margin-bottom: 1.5rem;
+    }
+.service-item:hover{
+        transform: translateY(-4%);}
+.services-items img{
+    width: 80vw;
+    }
+    
+ .food-item{
+        width: 80%;
+    }
+    
+.contact-form{
+    max-width: 90%;}
+footer{
+font-size: 1rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
